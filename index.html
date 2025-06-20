@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego CRUDY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <h1 id="nivel">Nivel: </h1>
+    <p id="dialogo">Bienvenido</p>
+
+    <div class="status">
+      <strong>Vidas:</strong> <span id="vidas" class="vidas">5</span>
+    </div>
+
+    <div id="opciones" class="opciones"></div>
+
+    <button id="atrasBtn" class="btn-secundario" style="display: none;">Atrás</button>
+  </main>
+
+  <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <h2>❌ Game Over ❌</h2>
+      <p>Has perdido todas tus vidas.</p>
+      <button id="reiniciarBtn">Volver al inicio</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
